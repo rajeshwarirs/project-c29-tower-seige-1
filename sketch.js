@@ -47,6 +47,7 @@ box18 = new BoxPurple(1010,220,40,50);
 polygon = new Polygon(100,50,50,50);
    
 slingshot = new Slingshot(polygon.body,{x:200,y:50});
+
 }
 
 function draw(){
@@ -79,7 +80,7 @@ slingshot.display();
 }
 
 function mouseDragged(){
-    Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
+    Matter.Body.setPosition(polygon.body, {x: mouseX , y: mouseY});
 }
 
 
