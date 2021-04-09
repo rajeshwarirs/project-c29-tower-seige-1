@@ -46,13 +46,14 @@ box18 = new BoxPurple(1010,220,40,50);
 
 polygon = new Polygon(100,50,50,50);
    
-slingshot = new Slingshot(polygon.body,{x:200,y:50});
+slingshot = new Slingshot(polygon.body,{x:100,y:150});
 
 }
 
 function draw(){
     background("black");
     Engine.update(engine);
+    strokeWeight(4);
 ground1.display();
 ground2.display();
 box1.display();
